@@ -38,7 +38,7 @@ ol {
   list-style: none;
 }
 
-.content{
+.content {
   display: flex;
   gap: 30px;
   align-items: flex-end;
@@ -52,10 +52,10 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
   margin-bottom: 26px;
 }
@@ -70,9 +70,12 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   padding: 2px;
   width: 394px;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
 }
 
 .content__video-card-thumbnail {
@@ -118,19 +121,19 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
   margin-bottom: 6px;
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 16.2px;
+  line-height: 0.9;
 }
 
 .result__video-container {
@@ -154,10 +157,10 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family:'Fira Sans Condensed';
+  font-family:'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
   margin-bottom: 5px;
 }
 
@@ -202,7 +205,7 @@ ol {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.22;
   min-width: 225px;
   padding: 2.5px 0;
   appearance: none;
@@ -237,10 +240,10 @@ ol {
   color: #fff;
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 1.22;
   text-align: center;
   cursor: pointer;
   padding: 6px 73.5px;
@@ -276,20 +279,5 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-}
-
-/* Кастомизация скрола */
-.content__list::-webkit-scrollbar {
-  width: 5px;  
-}
-
-.content__list::-webkit-scrollbar-track {
-  background: #1b1919;
-}
-
-.content__list::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 20px;
-  border: 3px solid #000;
 }
 
