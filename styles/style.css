@@ -201,7 +201,7 @@ ol {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #fff;
   background: transparent;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
   font-weight: 400;
